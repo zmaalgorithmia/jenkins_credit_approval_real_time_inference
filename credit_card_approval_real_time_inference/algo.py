@@ -89,14 +89,14 @@ def apply(input):
             adverse_action_reasons['no employment'] = 1
 
         # Store adverse action reasons in built-in storage
-        file_path = "data://zma/credit_card_approval/adverse_action_reasons_" + \
+        file_path = "data://zma/credit_card_approval_arr/adverse_action_reasons_" + \
             str(time.time()) + ".json"
         client.file(file_path).putJson(adverse_action_reasons)
 
-    #     # Store adverse action reasons on Google Cloud Storage
-    #     file_path = "gs://algorithmia_gcp_bucket/Credit_Card_Approval_AAR/adverse_action_reasons_" + \
-    #         str(time.time()) + ".json"
-    #     client.file(file_path).putJson(adverse_action_reasons)
+        # Store adverse action reasons on Amazon S3
+        file_path = "s3://zma-algorithmia-demo/credit_card_approval_arr/adverse_action_reasons_" + \
+            str(time.time()) + ".json"
+        client.file(file_path).putJson(adverse_action_reasons)
 
     ##########################################
     # Return output to consuming application #
