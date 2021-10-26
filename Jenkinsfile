@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']],
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                 userRemoteConfigs: [[url: 'https://github.com/zmaalgorithmia/jenkins_credit_approval_real_time_inference.git']]])
             }
         }
