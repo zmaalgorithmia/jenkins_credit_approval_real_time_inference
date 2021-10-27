@@ -67,7 +67,7 @@ def UPDATE_ALGORITHM_TEMPLATE(file_contents):
 # ALGORITHMIA_USERNAME - self explanatory
 #
 api_key = environ.get('ALGO_COM_API_KEY')
-algo_domain = environ.get('ALGO_COM_API')
+algo_domain = environ.get('ALGO_COM_DOMAIN')
 # api_key = environ.get('ALGORITHMIA_API_KEY')
 # algo_domain = environ.get('ALGORITHMIA_DOMAIN')
 algo_endpoint = f"https://{algo_domain}"
