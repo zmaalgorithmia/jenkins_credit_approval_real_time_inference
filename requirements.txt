@@ -1,4 +1,4 @@
-algorithmia>=1.4.0
+algorithmia>=1.14.0
 gitpython>=2.1.0
 six>=1.12.0
 joblib
