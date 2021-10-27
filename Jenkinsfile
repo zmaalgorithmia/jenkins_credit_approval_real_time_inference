@@ -4,7 +4,8 @@ pipeline {
         skipStagesAfterUnstable()
     }
     environment {
-        ALGORITHMIA_DOMAIN = 'algosales.productionize.ai'
+        // ALGORITHMIA_DOMAIN = 'algosales.productionize.ai'
+        ALGORITHMIA_DOMAIN = 'algorithmia.com'
         GIT_CONFIG_NOSYSTEM = '1'
         PYTHONUNBUFFERED = '1'
     }
